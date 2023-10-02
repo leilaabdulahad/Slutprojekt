@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.scss">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="eventform.css">
+    <title>Trekkers Expedition</title>
+</head>
+<body>
+
+
+        <h1>Trekkers Expedition</h1>
+    
+
+
+    <!-- Sidenavigation bar -->
+    <nav class="sidebar">
+        <ul class="sidebar-menu">
+            <!-- Link 1 -->
+            <li class="links">
+                <a href="https://www.aftonbladet.se" target="_blank">
+                    <span>
+                        <i class="material-icons">home</i>
+                    </span>
+                    Hem
+                </a>
+            </li>
+            <!-- Link 2 -->
+            <li class="links">
+                <a href="#">
+                    <span>
+                        <i class="material-icons">event</i>
+                    </span>
+                    Alla event
+                </a>
+            </li>
+
+            <!-- Link 3 -->
+            <li class="links">
+                <a href="#">
+                    <span>
+                        <i class="material-icons">create</i>
+                    </span>
+                    Skapa event
+                </a>
+            </li>
+
+            <!-- Link 4 -->
+            <li class="links">
+                <a href="#">
+                    <span>
+                        <i class="material-icons">people</i>
+                    </span>
+                    Om oss
+                </a>
+            </li>
+
+            <!-- Link 5 -->
+            <li class="links">
+                <a href="#">
+                    <span>
+                        <i class="material-icons">email</i>
+                    </span>
+                    Kundservice
+                </a>
+            </li>
+        </ul>    
+    </nav>
+
+
+<!-- Form section -->
+<div class="form-container">
+    <form>
+            <p>Fyll i rutorna nedan så kontaktar vi dig inom 24 timmar.</p>
+
+            <!-- Namn -->
+            <div class="section">
+                <label for="fname">Namn</label>
+                <input type="text" id="name" name="name" required><br><br>
+            </div>
+
+                <!-- Date -->
+            <div class="section">
+                    <label for="lname">Datum</label>
+                <input type="date" id="date" name="date" required><br><br>
+                    </div>
+            
+        <!-- Kort beskrivning -->
+        <div class="section">
+        <label for="description">Kort beskrivning</label><br>
+            <textarea id="section1" name="section1" required></textarea><br><br>
+        </div>
+    
+            
+        <!-- Agenda -->
+        <div class="section">
+            <label for="agenda">Agenda</label>
+            <input type="text" id="agenda" name="agenda"><br><br>
+        </div>
+            
+        <button type="submit">Skicka in</button>
+    </form>
+        
+        
+ </div>
+
+
+</body>
+</html>

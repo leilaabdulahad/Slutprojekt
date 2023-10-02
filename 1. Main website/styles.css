@@ -1,0 +1,134 @@
+* {
+  list-style: none;
+  text-decoration: none;
+  font-family: monospace;
+}
+
+body {
+  background-color: white;
+}
+
+h1 {
+  display: inline-block;
+  margin-top: 35px;
+  font-size: 2rem;
+  margin-left: 120px;
+  color: #FFB000;
+  background-color: #004225;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  font-size: 1.7rem;
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+}
+.title .header-image {
+  width: 70%;
+  height: auto;
+  border-radius: 20px;
+  margin-top: 8px;
+  margin-left: 60px;
+  align-items: center;
+}
+
+.sidebar {
+  display: flex;
+  position: absolute;
+  width: 220px;
+  inset-block: 0;
+  inset-inline-start: 0;
+  padding: 0;
+  margin-top: 150px;
+  margin-left: -45px;
+  height: 400px;
+}
+.sidebar .sidebar-menu a {
+  display: block;
+  padding: 15px;
+  font-size: 1rem;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+.sidebar .sidebar-menu i {
+  margin-right: 6px;
+  display: inline-block;
+  font-size: 2rem;
+  text-align: right;
+  line-height: 0.7;
+  vertical-align: bottom;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+.sidebar .sidebar-menu a:hover,
+.sidebar .sidebar-menu i:hover {
+  color: #004225;
+}
+
+.flex-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 35px;
+  padding: 100px;
+  align-items: start;
+}
+.flex-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.flex-container .flex-item {
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Adjust values as needed */
+  overflow: hidden;
+  word-wrap: break-word;
+  margin-left: 50px;
+}
+.flex-container .image-title {
+  font-weight: bold;
+  font-size: 1.6rem;
+  padding: 15px;
+  margin: 0;
+  font-family: monospace;
+}
+.flex-container .image-details {
+  font-size: 1.1rem;
+  padding-right: 38px;
+  margin: -28px;
+  font-family: monospace;
+  margin-left: 16px;
+  margin-bottom: 30px;
+}
+.flex-container .image-bookbutton {
+  padding: 10px 10px 10px 10px;
+  text-align: center;
+  font-size: 1rem;
+  font-family: monospace;
+  width: 190px;
+  height: 110px;
+  border-radius: 10px;
+  background-color: #78D6C6;
+  margin-left: 15px;
+  color: #000000;
+}
+.flex-container .image-bookbutton:hover {
+  background-color: #419197;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .header-image {
+    max-width: 80%;
+  }
+  .flex-container {
+    grid-template-columns: 1fr;
+    padding: 80px;
+    margin: 0 80px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

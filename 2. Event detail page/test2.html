@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image and Text Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        img {
+            max-width: 100%; /* This makes the image responsive */
+            height: auto;
+            margin-right: 300px;
+        }
+
+        .text {
+            flex: 1;
+            padding: 20px;
+            margin-left: 200px;
+            min-width: 200px;
+        }
+
+        .text ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .text li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image">
+            <img src="/1bild.png" alt="Image 1">
+        </div>
+
+        <div class="image">
+            <img src="/1bild.png" alt="Image 1">
+        </div>
+
+        <div class="image">
+            <img src="/1bild.png" alt="Image 1">
+        </div>
+
+        <div class="image">
+            <img src="/1bild.png" alt="Image 1">
+        </div>
+
+        <div class="image">
+            <img src="/1bild.png" alt="Image 1">
+        </div>
+
+        <div class="image">
+            <img src="/1bild.png" alt="Image 1">
+        </div>
+
+        <div class="text">
+            <h1>Travel to Bali</h1>
+            <ul>
+                <li>Bali is a tropical paradise that attracts travelers of all kinds.</li>
+                <li>Explore beautiful beaches and enjoy healthy cuisine.</li>
+                <li>Discover the relaxed atmosphere of Canggu.</li>
+                <li>Perfect for backpackers looking for adventure.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
