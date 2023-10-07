@@ -1,3 +1,4 @@
+@import '../1.Mainwebsite/variables.scss';
 *{
     list-style: none;
     text-decoration: none;
@@ -6,14 +7,14 @@
 }
 
 //Title
-.title{
+header{
     text-align: center;
     h1{
         display: inline-block;
         margin-top: 35px;
         margin-bottom: 100px;
         font-size: 2rem;
-        margin-left: 120px;
+        margin-left: 230px;
         color: #FFB000;
         background-color: #004225;
         border-radius: 20px;
@@ -40,34 +41,33 @@ h2{
 .sidebar {
     display: flex;
     position: absolute;
-    width: 260px;
+    width: 250px;
     inset-block: 0;
     inset-inline-start: 0;
     padding: 0;
     margin-top: 150px;
-    margin-left: -30px;
-    max-height: 500px;
+    margin-left: -45px;
+    height: 400px;
     .sidebar-menu {
     a {
         display: block;
         padding: 15px;
-        font-size: 1.3rem;
-        text-decoration: none;
-        color: rgb(0, 0, 0);
+        font-size: 1.2rem;
+        color: black;
         cursor: pointer;
         i {
-        margin-right: 6px;
-        display: inline-block;
-        font-size: 2rem;
-        text-align: right;
-          line-height: 0.7; //Sätter ikonerna och texten i samma höjd
+        // margin-right: 6px;
+        // display: inline-block;
+        // text-align: right;
+        font-size: 1.8rem;
+        line-height: 0.7; //Sätter ikonerna och texten i samma höjd
         vertical-align: bottom;
         color: rgb(0, 0, 0);
         cursor: pointer;
         }
         &:hover,
         i:hover {
-        color: #004225;
+        color: #a5a5a5;
         }
     }
     }
@@ -77,7 +77,7 @@ h2{
 //Column 1+2 styling 
 .event-details{
     padding: 0 0 160px 200px;
-    font-size: 1.4rem;
+    font-size: 1rem;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
     margin-right: 80px;
@@ -99,7 +99,7 @@ h2{
         max-height: 500px;
         min-height: 400px;
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         font-family: monospace;
         margin-top: 20px;
         padding: 40px;

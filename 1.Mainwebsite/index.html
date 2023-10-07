@@ -4,29 +4,29 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="styles.scss">
+    <link rel="shortcut icon" href="/favicon.ico" type="image">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Företag</title>
+    <title>Trekkers Expedition</title>
 </head>
 <body>
     <!-- Title and first image -->
-    <div class="title">
+    <header class="title">
         <h1>Trekkers Expedition</h1>
-    </div>
+        <div class="title">
+            <img class="header-image"
+            src="/header.png" 
+            alt="Ett berg med växtlighet och strand">
+        </div>  
+    </header>
 
-
-    <div class="title">
-        <img class="header-image"
-        src="/header.png" 
-        alt="Person som cyklar ner för ett berg">
-    </div>  
-    
     <!-- Side navigation -->
-    <nav class="sidebar">
-        <ul class="sidebar-menu">
-            <!-- Link 1 -->
+    <aside>
+        <nav class="sidebar">
+            <ul class="sidebar-menu">
+                <!-- Link 1 -->
             <li class="links">
-                <a href="https://www.aftonbladet.se" target="_blank">
+                <a href="#" target="_blank">
                     <span>
                         <i class="material-icons">home</i>
                     </span>
@@ -39,30 +39,30 @@
                     <span>
                         <i class="material-icons">event</i>
                     </span>
-                    Alla event
+                    Kommande
                 </a>
             </li>
-    
+            
             <!-- Link 3 -->
             <li class="links">
-                <a href="#">
+                <a href="/3. Event form/eventform.html">
                     <span>
                         <i class="material-icons">create</i>
                     </span>
-                    Skapa event
+                    Boka resa
                 </a>
             </li>
-    
+            
             <!-- Link 4 -->
             <li class="links">
-                <a href="#">
+                <a href="/4. About us/aboutus.html">
                     <span>
                         <i class="material-icons">people</i>
                     </span>
                     Om oss
                 </a>
             </li>
-    
+            
             <!-- Link 5 -->
             <li class="links">
                 <a href="#">
@@ -73,22 +73,23 @@
                 </a>
             </li>
         </ul>    
-        </nav>
-<!-- Photo 1 -->
-<div class="flex-container">
-<div class="flex-item"> 
+    </nav>
+</aside>
+
+    <!-- Photo 1 -->
+<main class="pic-container">
+<div class="pic-item"> 
     <img src="/bild1.png" 
-    alt="Photo of bicycle">
+    alt="Hav öar med berg på">
     <p class="image-title">Sydostasien</p>
     <p class="image-details"><br>Det här en av de absoluta klassikerna och helt enkelt en resa du måste göra. Denna resa tar dig till Vietnam, Thailand och Malaysia. <br><br>Kategori: Backpackning<br></p>
     <a class="image-bookbutton" href="/2. Event detail page/detailpage.html">Mer info</a><br><br>
-        
 </div>
 
 <!-- Photo 2 -->
-<div class="flex-item"> 
+<div class="pic-item"> 
     <img src="/bild2.png" 
-    alt="Photo of bicycle">
+    alt="Risfält med en å i mitten">
     <p class="image-title">Sri Lanka & Maldiverna</p>
     <p class="image-details"><br>Det här en av de absoluta klassikerna och helt enkelt en resa du måste göra. Denna resa tar dig till Thailand, Vietnam, Cambodia och mer.<br><br>Kategori: Backpackning<br>
     </p>
@@ -96,45 +97,41 @@
 </div>
 
 <!-- Photo 3 -->
-<div class="flex-item"> 
+<div class="pic-item"> 
     <img src="/bild3.png" 
-    alt="Photo of bicycle">
+    alt="Strand med klarblått vatten">
     <p class="image-title">Tropiska Filipperna</p>
-    <p class="image-details"><br>Det här en av de absoluta klassikerna och helt enkelt en resa du måste göra. Denna resa tar dig till Thailand, Vietnam, Cambodia och mer. <br><br>Kategori: Backpackning<br></p>
+    <p class="image-details"><br>Det här en av de absoluta klassikerna och helt enkelt en resa du måste göra. Denna resa tar dig till Thailand, Vietnam, Cambodia och mer. <br><br>Kategori: Sol och bad<br></p>
     <a class="image-bookbutton" href="/2. Event detail page/detailpage.html">Mer info</a><br><br>
-    
 </div>
 
 <!-- Photo 4 -->
-<div class="flex-item"> 
+<div class="pic-item"> 
     <img src="/bild4.png" 
-    alt="Photo of bicycle">
+    alt="Havet i bali med båtar">
     <p class="image-title">Backpackningresan på Bali</p>
     <p class="image-details"><br>Det här en av de absoluta klassikerna och helt enkelt en resa du måste göra. Denna resa tar dig till Thailand, Vietnam, Cambodia och mer. <br><br>Kategori: Backpackning<br></p>
     <a class="image-bookbutton" href="/2. Event detail page/detailpage.html">Mer info</a><br><br>
-    
 </div>
 
 <!-- Photo 5 -->
-<div class="flex-item"> 
+<div class="pic-item"> 
     <img src="/bild5.png" 
-    alt="Photo of bicycle">
+    alt="En ön i bali med finkornig strand med klarblått vatten">
     <p class="image-title">Fitness bootcamp på Bali</p>
-    <p class="image-details"><br>Det här en av de absoluta klassikerna och helt enkelt en resa du måste göra. Denna resa tar dig till Thailand, Vietnam, Cambodia och mer. <br><br>Kategori: Backpackning<br></p>
+    <p class="image-details"><br>Det här en av de absoluta klassikerna och helt enkelt en resa du måste göra. Denna resa tar dig till Thailand, Vietnam, Cambodia och mer. <br><br>Kategori: Fitness Bootcamp<br></p>
     <a class="image-bookbutton" href="/2. Event detail page/detailpage.html">Mer info</a><br><br>
-    
 </div>
 
 <!-- Photo 6 -->
-<div class="flex-item"> 
+<div class="pic-item"> 
     <img src="/bild6.png" 
-    alt="Photo of bicycle">
+    alt="Flera mindre berg mitt i havet.">
     <p class="image-title">Island hopping</p>
     <p class="image-details"><br>Det här en av de absoluta klassikerna och helt enkelt en resa du måste göra. Denna resa tar dig till Thailand, Vietnam, Cambodia och mer. <br><br>Kategori: Backpackning<br></p>
     <a class="image-bookbutton" href="/2. Event detail page/detailpage.html">Mer info</a><br><br>
-        
 </div>
-</div>
+</main>
 
 
 

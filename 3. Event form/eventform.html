@@ -10,103 +10,153 @@
     <title>Trekkers Expedition</title>
 </head>
 <body>
-
-
+    
+    <header>
         <h1>Trekkers Expedition</h1>
+    </header>
+
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li class="links">
+                    <a href="https://www.aftonbladet.se" target="_blank">
+                        <span>
+                            <i class="material-icons">home</i>
+                        </span>
+                        Hem
+                    </a>
+                </li>
+                <li class="links">
+                    <a href="#">
+                        <span>
+                            <i class="material-icons">event</i>
+                        </span>
+                        Kommande
+                    </a>
+                </li>
     
+                <!-- Link 3 -->
+                <li class="links">
+                    <a href="/3. Event form/eventform.html">
+                        <span>
+                            <i class="material-icons">create</i>
+                        </span>
+                        Boka resa
+                    </a>
+                </li>
+    
+                <!-- Link 4 -->
+                <li class="links">
+                    <a href="/4. About us/aboutus.html">
+                        <span>
+                            <i class="material-icons">people</i>
+                        </span>
+                        Om oss
+                    </a>
+                </li>
+    
+                <!-- Link 5 -->
+                <li class="links">
+                    <a href="#">
+                        <span>
+                            <i class="material-icons">email</i>
+                        </span>
+                        Kontakt
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        
+        <main>
+            <section class="form-container">
+                <h2>Skriv till oss</h2>
+                <p class="form-information">Får du huvudvärk av tanken att hitta den bästa flygrutten, surfcampet, dykkursen eller hostlet? Låt oss göra grovjobbet åt dig! Du vet, det är lite som när en proffskock smakar på maten innan den serveras. Mejla oss och berätta vart du vill resa och vad du vill uppleva, så tar vi det därifrån. Vi sätter ihop ett personligt reseförslag åt dig - helt kostnadsfritt!</p>
 
+                <form>
+                    <div class="options">
+                        <label for="banner"><strong>Välj den resekategorin du är mest intresserad av:</strong></label>
+                        <label for="banner1">Backningsresa</label>
+                        <input type="radio" 
+                        id="banner1" 
+                        name="banner" 
+                        value="Banner Option 1"><br>
+                        
+                        
+                        <label for="banner2">Fitness Bootcamp</label>
+                        <input type="radio" 
+                        id="banner2" 
+                        name="banner" 
+                        value="Banner Option 2"><br>
+                        
+                        
+                        <label for="banner3">Sol och bad</label>
+                        <input type="radio" 
+                        id="banner3" 
+                        name="banner" 
+                        value="Banner Option 3"><br>
+                        
+                    </div> 
+        
 
-    <!-- Sidenavigation bar -->
-    <nav class="sidebar">
-        <ul class="sidebar-menu">
-            <!-- Link 1 -->
-            <li class="links">
-                <a href="https://www.aftonbladet.se" target="_blank">
-                    <span>
-                        <i class="material-icons">home</i>
-                    </span>
-                    Hem
-                </a>
-            </li>
-            <!-- Link 2 -->
-            <li class="links">
-                <a href="#">
-                    <span>
-                        <i class="material-icons">event</i>
-                    </span>
-                    Alla event
-                </a>
-            </li>
-
-            <!-- Link 3 -->
-            <li class="links">
-                <a href="#">
-                    <span>
-                        <i class="material-icons">create</i>
-                    </span>
-                    Skapa event
-                </a>
-            </li>
-
-            <!-- Link 4 -->
-            <li class="links">
-                <a href="#">
-                    <span>
-                        <i class="material-icons">people</i>
-                    </span>
-                    Om oss
-                </a>
-            </li>
-
-            <!-- Link 5 -->
-            <li class="links">
-                <a href="#">
-                    <span>
-                        <i class="material-icons">email</i>
-                    </span>
-                    Kundservice
-                </a>
-            </li>
-        </ul>    
-    </nav>
-
-<h4>Hej</h4>
-<!-- Form section -->
-<div class="form-container">
-    <form>
-            <p>Fyll i rutorna nedan så kontaktar vi dig inom 24 timmar.</p>
-
-            <!-- Namn -->
-            <div class="section">
-                <label for="fname">Namn</label>
-                <input type="text" id="name" name="name" required><br><br>
-            </div>
-
-                <!-- Date -->
-            <div class="section">
-                    <label for="lname">Datum</label>
-                <input type="date" id="date" name="date" required><br><br>
+                    <div class="form-group input">
+                        <label for="name">Namn</label>
+                        <input type="text" 
+                        id="name" 
+                        name="name" 
+                        placeholder="För och efternamn" 
+                        required>
                     </div>
+                    <div class="form-group input">
+                        <label for="email">E-post</label>
+                        <input type="email" 
+                        id="email" 
+                        name="email" 
+                        placeholder="ettexempel@exempel.se" 
+                        required>
+                    </div>
+                    <div class="form-group input">
+                        <label for="subject">Telefonnummer</label>
+                        <input type="text" 
+                        id="subject" 
+                        name="subject" 
+                        placeholder="Telefonnummer" 
+                        required>
+                    </div>
+                <!-- Textarea, placeholder funkar ej -->
+                    <div class="form-group description-input">
+                        <label for="message">Kort beskrivning</label>
+                        <textarea id="message" 
+                        name="message" 
+                        rows="4" 
+                        placeholder="Berätta lite kort när du vill resa och vad du vill ha hjälp med. Boka flyg? Förslag på häftiga aktiviteter? Vi har massor av tips och råd!"
+                        required></textarea>
+                    </div>
+                    <div class="input">
+                        <label for="photos">Upload Four Photos:</label>
+                        <input type="file" 
+                        id="photos" 
+                        name="photos[]" 
+                        accept="image/*" 
+                        multiple>
+                        <small>Max fil storlek: 5MB</small>
+                    </div>
+                    
+                
+                    
+                    
+                    
+                    
+                </form>
+                <button type="submit">Skicka</button>
+            </section>
+
             
-        <!-- Kort beskrivning -->
-        <div class="section">
-        <label for="description">Kort beskrivning</label><br>
-            <textarea id="section1" name="section1" required></textarea><br><br>
-        </div>
-    
-            
-        <!-- Agenda -->
-        <div class="section">
-            <label for="agenda">Agenda</label>
-            <input type="text" id="agenda" name="agenda"><br><br>
-        </div>
-            
-        <button type="submit">Skicka in</button>
-    </form>
-        
-        
- </div>
 
 
+        </form>
+
+
+        </main>
+    </div>
 </body>
 </html>
