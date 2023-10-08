@@ -5,8 +5,8 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-  font-family: monospace;
   font-family: serif;
+  background-color: white;
 }
 
 /* Body styles */
@@ -49,20 +49,20 @@ header{
     // // top: 180px; /* Stick to the top of the viewport */
     // left: 0; /* Stick to the left of the viewport */
     // height: 100%; /* Full height of the viewport */
-    display: flex;
-    position: absolute;
-    width: 250px;
+    
+    // display: flex;
+    margin: 220px 0 0 0;
+    width: 150px;
+    padding-left: 10px;
+    position: fixed;
     inset-block: 0;
     inset-inline-start: 0;
-    padding: 0 0 0 10px;
-    margin-top: 160px;
-    
-    height: 400px;
+
     .links{
       margin-bottom: 30px;
     }
   }
-  
+
   .sidebar a{
     padding: 0px;
     font-size: 1.2rem;
@@ -146,9 +146,23 @@ main {
     }
 
     
-    .options{
+    .options-category{
       display: flex;
       flex-direction: column;
+      cursor: pointer;
     }
+    .categories{
+      cursor: pointer;
+    }
+
+
+    //Photo upload and label
+
     
-    
+    .file-upload {
+      display: inline-block;
+      margin-right: 20px; /* Add some space between upload fields */
+    }
+      // label{
+      //   font-weight: bold;
+      // }

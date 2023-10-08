@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="styles.scss">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="En resebyrå med olika typer av resepaket">
+    <meta name="author" content="Leila Abdulahad">
     <link rel="stylesheet" href="eventform.css">
     <title>Trekkers Expedition</title>
 </head>
@@ -19,7 +21,7 @@
         <nav class="sidebar">
             <ul>
                 <li class="links">
-                    <a href="https://www.aftonbladet.se" target="_blank">
+                    <a href="#">
                         <span>
                             <i class="material-icons">home</i>
                         </span>
@@ -73,24 +75,28 @@
                 <p class="form-information">Får du huvudvärk av tanken att hitta den bästa flygrutten, surfcampet, dykkursen eller hostlet? Låt oss göra grovjobbet åt dig! Du vet, det är lite som när en proffskock smakar på maten innan den serveras. Mejla oss och berätta vart du vill resa och vad du vill uppleva, så tar vi det därifrån. Vi sätter ihop ett personligt reseförslag åt dig - helt kostnadsfritt!</p>
 
                 <form>
-                    <div class="options">
-                        <label for="banner"><strong>Välj den resekategorin du är mest intresserad av:</strong></label>
-                        <label for="banner1">Backningsresa</label>
-                        <input type="radio" 
+                    <div class="options-category">
+                        <label for="banner"><strong>Välj den resekategorin du är mest intresserad av:</strong></label><br>
+                        
+                        <label class="categories" for="banner1">Backningsresa</label>
+                        <input class="categories" 
+                        type="radio" 
                         id="banner1" 
                         name="banner" 
                         value="Banner Option 1"><br>
                         
                         
-                        <label for="banner2">Fitness Bootcamp</label>
-                        <input type="radio" 
+                        <label class="categories" for="banner2">Fitness Bootcamp</label>
+                        <input class="categories" 
+                        type="radio" 
                         id="banner2" 
                         name="banner" 
                         value="Banner Option 2"><br>
                         
                         
-                        <label for="banner3">Sol och bad</label>
-                        <input type="radio" 
+                        <label class="categories" for="banner3">Sol och bad</label>
+                        <input class="categories" 
+                        type="radio" 
                         id="banner3" 
                         name="banner" 
                         value="Banner Option 3"><br>
@@ -131,22 +137,33 @@
                         placeholder="Berätta lite kort när du vill resa och vad du vill ha hjälp med. Boka flyg? Förslag på häftiga aktiviteter? Vi har massor av tips och råd!"
                         required></textarea>
                     </div>
-                    <div class="input">
-                        <label for="photos">Upload Four Photos:</label>
-                        <input type="file" 
-                        id="photos" 
-                        name="photos[]" 
-                        accept="image/*" 
-                        multiple>
-                        <small>Max fil storlek: 5MB</small>
-                    </div>
-                    
-                
-                    
-                    
-                    
                     
                 </form>
+                <form class="form2" action="upload.php" method="post" enctype="multipart/form-data">
+                    <div class="file-upload">
+                        <label for="photo1">Foto 1:</label>
+                        <input type="file" name="photo1" accept="image/*">
+                        <small>Max fil storlek: 5MB</small><br>
+                    </div><br><br>
+            
+                    <div class="file-upload">
+                        <label for="photo2">Foto 2:</label>
+                        <input type="file" name="photo2" accept="image/*">
+                        <small>Max fil storlek: 5MB</small>
+                    </div><br><br>
+            
+                    <div class="file-upload">
+                        <label for="photo3">Foto 3:</label>
+                        <input type="file" name="photo3" accept="image/*">
+                        <small>Max fil storlek: 5MB</small>
+                    </div><br><br>
+            
+                    <div class="file-upload">
+                        <label for="photo4">Foto 4:</label>
+                        <input type="file" name="photo4" accept="image/*">
+                        <small>Max fil storlek: 5MB</small>
+                    </div><br><br>
+            </form>
                 <button type="submit">Skicka</button>
             </section>
 
@@ -154,9 +171,9 @@
 
 
         </form>
+    </main>
+</div>
 
 
-        </main>
-    </div>
 </body>
 </html>

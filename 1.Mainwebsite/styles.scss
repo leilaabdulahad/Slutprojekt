@@ -3,12 +3,10 @@
 *{
     list-style: none;
     text-decoration: none;
-    font-family: monospace;
+    font-family: serif;
 }
 
-body{
-    background-color: $my-color;
-}
+
 
 //Title
 h1{
@@ -41,16 +39,14 @@ h1{
 
 //Sidebar 
 .sidebar{
-    display: flex;
-    position: absolute;
+    position: fixed;
     width: 250px;
     inset-block: 0;
     inset-inline-start: 0;
     padding: 0;
-    margin-top: 150px;
+    margin-top: 190px;
     margin-left: -45px;
     height: 400px;
-    
     
 .sidebar-menu a{
     display: block;
@@ -61,14 +57,12 @@ h1{
     }
 
     .sidebar-menu i{
-        margin-right: 6px;
-        display:inline-block;
-        font-size: 1.8rem;
-        text-align: right;
-        line-height: 0.7; //Sätter ikonerna och texten i samma höjd
-        vertical-align:bottom;
-        color: rgb(0, 0, 0);
-        cursor: pointer;
+    padding: 0;
+    font-size: 1.8rem;
+    line-height: 0.9;
+    vertical-align: bottom;
+    color: black;
+    cursor: pointer;
     }
     .sidebar-menu a:hover,
     .sidebar-menu i:hover{
