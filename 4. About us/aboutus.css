@@ -89,6 +89,7 @@ header h1 {
 .about-us-vd .vd-info {
   margin: 35px 0 0 35px;
   display: flex;
+  flex-direction: column;
 }
 
 .about-us-team {
@@ -103,6 +104,23 @@ header h1 {
   margin: 0 0 100px 0;
 }
 
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  font-size: 2rem;
+  padding: 0 90px 90px 0;
+}
+
+input {
+  font-size: 2rem;
+}
+
+label {
+  font-weight: bold;
+}
+
 .contact-form-button {
   border: none;
   background-color: #004225;
@@ -112,10 +130,12 @@ header h1 {
   border-radius: 10px;
   margin: 0 0 0 150px;
   cursor: pointer;
+  width: 100px;
 }
 
 .contact-form-button:hover {
   background-color: #FFB000;
+  color: black;
 }
 
 @media (max-width: 868px) {

@@ -97,6 +97,7 @@ h3{
         .vd-info{
             margin: 35px 0 0 35px;
             display: flex;
+            flex-direction: column;
         }
     }
     
@@ -104,7 +105,7 @@ h3{
     
     //Team bilden
     .about-us-team{
-text-align: left;
+        text-align: left;
         h4{
             font-size: 1.5rem;
         }
@@ -116,6 +117,22 @@ text-align: left;
     }
     
 //Contact form button
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    font-size: 2rem;
+    padding: 0 90px 90px 0;
+    
+}
+input{
+    font-size: 2rem;
+}
+label{
+    font-weight: bold;
+    
+}
 .contact-form-button{
     border: none;
     background-color: #004225;
@@ -125,10 +142,15 @@ text-align: left;
     border-radius: 10px;
     margin: 0 0 0 150px;
     cursor: pointer;
+    width: 100px;
+
+    
 }
 .contact-form-button:hover{
     background-color: #FFB000;
+    color: black;
 }
+
 
 
 
