@@ -39,10 +39,10 @@ header h1 {
 
 /* Sidebar styles */
 .sidebar {
+  position: fixed;
   margin: 220px 0 0 0;
   width: 150px;
   padding-left: 10px;
-  position: fixed;
   inset-block: 0;
   inset-inline-start: 0;
 }

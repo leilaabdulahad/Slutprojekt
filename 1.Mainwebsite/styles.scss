@@ -9,137 +9,121 @@
 
 
 //Title
-h1{
+h1 {
     display: inline-block;
     margin-top: 35px;
     margin-left: 70px;
     font-size: 2rem;
-    color: #FFB000;
-    background-color: #004225;
+    color: $logo-color;
+    background-color: $background-color-logo;
     border-radius: 20px;
     padding: 20px;
-}
-.title {
+  }
+  
+  .title {
     text-align: center;
     font-size: 1.7rem;
     margin: 0;
     padding: 0;
     font-family: monospace;
-        //Header image
-    .header-image{
-        width: 70%;
-        height: auto;
-        border-radius: 20px;
-        margin-top: 8px;
-        margin-left: 60px;
-        align-items: center;
+  
+    .header-image {
+      width: 70%;
+      height: auto;
+      border-radius: 20px;
+      margin-top: 8px;
+      margin-left: 60px;
+      align-items: center;
     }
-}
-
-
-//Sidebar 
-.sidebar{
+  }
+  
+  .sidebar {
     position: fixed;
     width: 250px;
-    inset-block: 0;
-    inset-inline-start: 0;
+    top: 0;
+    left: 0;
     padding: 0;
     margin-top: 190px;
     margin-left: -45px;
     height: 400px;
-    
-.sidebar-menu a{
-    display: block;
-    padding: 15px;
-    font-size: 1.2rem;
-    color: black;
-    cursor: pointer;
+  
+    .sidebar-menu a {
+      display: block;
+      padding: 15px;
+      font-size: 1.2rem;
+      color: black;
+      cursor: pointer;
     }
-
-    .sidebar-menu i{
-    padding: 0;
-    font-size: 1.8rem;
-    line-height: 0.9;
-    vertical-align: bottom;
-    color: black;
-    cursor: pointer;
+  
+    .sidebar-menu i {
+      padding: 0;
+      font-size: 1.8rem;
+      line-height: 0.9;
+      vertical-align: bottom;
+      color: black;
+      cursor: pointer;
     }
+  
     .sidebar-menu a:hover,
-    .sidebar-menu i:hover{
-        color: #004225;
+    .sidebar-menu i:hover {
+      color: $hover-color;
     }
-}
-
-//Settings for pictures
-.pic-container{
+  }
+  
+  .pic-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap: 35px;
     padding: 100px;
     align-items: start;
-    
-    img{
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
+  
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
     }
-        .pic-item{
-        border-radius: 20px;
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Adjust values as needed */
-        overflow: hidden;
-        word-wrap: break-word;
-        margin-left: 50px;
+  
+    .pic-item {
+      border-radius: 20px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      word-wrap: break-word;
+      margin-left: 50px;
     }
-    .image-title{
-        font-weight: bold;
-        font-size: 1.6rem;
-
-        padding: 15px;
-        margin: 0;
-        font-family: monospace;
+  
+    .image-title {
+      font-weight: bold;
+      font-size: 1.6rem;
+      padding: 15px;
+      margin: 0;
+      font-family: monospace;
     }
-    .image-details{
-        font-size: 1.2rem;
-        padding-right: 38px;
-        margin: -28px; //för <p> närmre varandra
-        font-family: monospace;
-        margin-left: 16px;
-        margin-bottom: 30px;
+  
+    .image-details {
+      font-size: 1.2rem;
+      padding-right: 38px;
+      margin: -28px;
+      font-family: monospace;
+      margin-left: 16px;
+      margin-bottom: 30px;
     }
-    //Button
-    .image-bookbutton{
-        padding: 10px 10px 10px 10px;
-        text-align: center;
-        font-size: 1rem;
-        font-family: monospace;
-        width: 190px;
-        height: 110px;
-        border-radius: 10px;
-        background-color: #78D6C6;
-        margin-left: 15px;
-        color: #000000;
-
+  
+    .image-bookbutton {
+      padding: 10px 10px 10px 10px;
+      text-align: center;
+      font-size: 1rem;
+      font-family: monospace;
+      width: 190px;
+      height: 110px;
+      border-radius: 10px;
+      background-color: #78D6C6;
+      margin-left: 15px;
+      color: #000000;
     }
-    .image-bookbutton:hover{
-        background-color: #419197;
-        cursor: pointer;
+  
+    .image-bookbutton:hover {
+      background-color: #419197;
+      cursor: pointer;
     }
-}  
-
-//Responsive website
-@media (max-width: 768px){
-    .header-image{
-        max-width: 80%;
-    }
-
-    // .pic-container{
-    //     grid-template-columns: 1fr;
-    //     padding: 80px;
-    //     margin: 0 80px;
-        
-    // }
-}
-
-
-
-
+  }
+  

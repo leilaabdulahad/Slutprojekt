@@ -2,10 +2,21 @@
 *{
     text-decoration: none;
     list-style: none;
-    font-family: serif;
+    font-family: $myfont-family;
     background-color: white;
 }
 
+//Logga
+header{
+    text-align: center;
+    h1{
+        display: inline-block;
+        padding: 20px;
+        border-radius: 20px;
+        color: $logo-color;
+        background-color: $background-color-logo;
+    }
+}
 //Side navigation bar
 .sidebar {
 	margin: 190px 0 0 0;
@@ -38,21 +49,10 @@
 	}
     a:hover,
     i:hover{
-        color: #a5a5a5;
+        color: $hover-color;
     }
 }
 
-//Logga
-header{
-    text-align: center;
-    h1{
-        display: inline-block;
-        padding: 20px;
-        border-radius: 20px;
-        color: #FFB000;
-        background-color: #004225;
-    }
-}
 
 
 //Main feed
@@ -122,38 +122,39 @@ h3{
     flex-direction: column;
     justify-content: left;
     align-items: left;
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 0 90px 90px 0;
-    
-}
-input{
-    font-size: 2rem;
-}
-label{
-    font-weight: bold;
-    
+    input{
+        font-size: 1.5rem;
+    }
+    label{
+        font-weight: bold; 
+    }  
+    textarea {
+        width: 330px; 
+        height: 150px;
+        border-radius: 5px;
+        font-size: 1.5rem;
+        resize: none; 
+      }
+      
 }
 .contact-form-button{
     border: none;
     background-color: #004225;
-    color: white;
-    font-size: 1.3rem;
     padding: 10px;
+    font-size: 1.3rem;
     border-radius: 10px;
-    margin: 0 0 0 150px;
-    cursor: pointer;
-    width: 100px;
-
+    margin: 0 0 0 125px;
     
+    width: 100px;
+    color: white;
+    cursor: pointer;
 }
 .contact-form-button:hover{
     background-color: #FFB000;
     color: black;
 }
-
-
-
-
 
 
     //VD info paragraph responsive

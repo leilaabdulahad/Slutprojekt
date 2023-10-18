@@ -5,6 +5,17 @@
   background-color: white;
 }
 
+header {
+  text-align: center;
+}
+header h1 {
+  display: inline-block;
+  padding: 20px;
+  border-radius: 20px;
+  color: #FFB000;
+  background-color: #004225;
+}
+
 .sidebar {
   margin: 190px 0 0 0;
   width: 220px;
@@ -38,17 +49,6 @@
 .sidebar a:hover,
 .sidebar i:hover {
   color: #a5a5a5;
-}
-
-header {
-  text-align: center;
-}
-header h1 {
-  display: inline-block;
-  padding: 20px;
-  border-radius: 20px;
-  color: #FFB000;
-  background-color: #004225;
 }
 
 .about-us {
@@ -109,28 +109,33 @@ header h1 {
   flex-direction: column;
   justify-content: left;
   align-items: left;
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding: 0 90px 90px 0;
 }
-
-input {
-  font-size: 2rem;
+.contact-form input {
+  font-size: 1.5rem;
 }
-
-label {
+.contact-form label {
   font-weight: bold;
+}
+.contact-form textarea {
+  width: 330px;
+  height: 150px;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  resize: none;
 }
 
 .contact-form-button {
   border: none;
   background-color: #004225;
-  color: white;
-  font-size: 1.3rem;
   padding: 10px;
+  font-size: 1.3rem;
   border-radius: 10px;
-  margin: 0 0 0 150px;
-  cursor: pointer;
+  margin: 0 0 0 125px;
   width: 100px;
+  color: white;
+  cursor: pointer;
 }
 
 .contact-form-button:hover {

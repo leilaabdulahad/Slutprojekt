@@ -2,7 +2,7 @@
   list-style: none;
   text-decoration: none;
   background-color: #ffffff;
-  font-family: monospace;
+  font-family: serif;
 }
 
 header {
@@ -38,12 +38,12 @@ h2 {
 
 .sidebar {
   display: flex;
-  position: absolute;
+  position: fixed;
   width: 250px;
   inset-block: 0;
   inset-inline-start: 0;
   padding: 0;
-  margin-top: 150px;
+  margin-top: 190px;
   margin-left: -45px;
   height: 400px;
 }
