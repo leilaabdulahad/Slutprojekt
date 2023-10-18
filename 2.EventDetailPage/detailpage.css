@@ -93,7 +93,7 @@ h2 {
   font-family: monospace;
   margin-top: 20px;
   padding: 40px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Adjust values as needed */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
 }
 .event-details .event-details-list a {
@@ -139,8 +139,8 @@ h2 {
 
 @media (max-width: 768px) {
   .event-details {
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Adjust the column size as needed */
-    justify-content: center; /* Center align the boxes on smaller screens */
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    justify-content: center;
   }
 }
 
